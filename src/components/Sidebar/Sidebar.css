@@ -1,0 +1,38 @@
+.Sidebar {
+  width: 100%;
+  max-width: 350px;
+}
+
+.Sidebar ul {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.Sidebar ul li {
+  list-style: none;
+  text-align: left;
+  padding: 10px 10px;
+  border-top: 1px solid lightgray;
+  background: ghostwhite;
+  cursor: pointer;
+}
+
+.Sidebar ul li:hover {
+  background: lavender;
+}
+
+.Sidebar ul li.selected {
+  background: lightblue;
+}
+
+.title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.3rem;
+}
+
+.subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+}
