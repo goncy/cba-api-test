@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/goncy/cba-api-test.git"
   },
-  "homepage": "https://github.com/goncy/cba-api-test",
+  "homepage": "https://goncy.github.io/cba-api-test",
   "keywords": [
     "react",
     "hoc",
@@ -31,6 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   }
 }
