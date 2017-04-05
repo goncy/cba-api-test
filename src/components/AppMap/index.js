@@ -51,11 +51,14 @@ export const AppMapHOC = compose(
     ['selected'],
     ({map, library, selected, setKMLLayer, KMLLayer}) => {
       if (library) {
-        if (KMLLayer) KMLLayer.setMap(null)
-        setKMLLayer(new library.KmlLayer({
-          url: selected.recurso.url,
-          map
-        }))
+        if (KMLLayer) {
+          KMLLayer.setUrl(selected.recurso.url)
+        } else {
+          setKMLLayer(new library.KmlLayer({
+            url: selected.recurso.url,
+            map
+          }))
+        }
       }
     }
   ),
